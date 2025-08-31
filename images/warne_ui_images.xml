@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Atlas>
+	<Texture filename="warne_ui_images.tex" />
+	<Elements>
+		<Element name="warne_ui_papyrus.tex" u1="0.001" u2="0.2724375" v2="0.999" v1="0.4619375" variant="" />
+		<Element name="warne_ui_pen.tex" u1="0.2744375" u2="0.545875" v2="0.999" v1="0.4619375" variant="" />
+		<Element name="warne_ui_slot.tex" u1="0.547875" u2="0.8193125" v2="0.999" v1="0.4619375" variant="" />
+	</Elements>
+</Atlas>

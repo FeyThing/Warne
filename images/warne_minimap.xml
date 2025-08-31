@@ -1,0 +1,6 @@
+﻿<Atlas>
+	<Texture filename="warne_minimap.tex" />
+	<Elements>
+		<Element name="warne.png" u1="0.001" u2="0.999" v2="0.999" v1="0.001" />
+	</Elements>
+</Atlas>

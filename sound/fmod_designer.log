@@ -1,0 +1,185 @@
+Warning: QPainter::begin: Paint device returned engine == 0, type: 1
+Warning: QPainter::setPen: Painter not active
+Warning: QPainter::setBrush: Painter not active
+Warning: QPainter::setRenderHint: Painter must be active to set rendering hints
+Warning: QPainter::setPen: Painter not active
+Debug: 
+Building project 'warne'...
+Debug: Building project D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\warne.fev...
+Debug: Unique sound defs 1/10
+Debug: Retrieving sound file info...
+Debug: Retrieving reverb info...
+Debug: FEV file written ok
+Debug: Unique Envelope Points: 0 of 0
+Debug: Unique Strings: 442 characters of 442
+Debug: Caching sound file details for ''...
+Debug: files\warne_carol_loop.mp3
+Debug: files\warne_death.mp3
+Debug: files\warne_emote.mp3
+Debug: files\warne_ghost1.mp3
+Debug: files\warne_ghost2.mp3
+Debug: files\warne_ghost3.mp3
+Debug: files\warne_ghost4.mp3
+Debug: files\warne_ghost5.mp3
+Debug: files\warne_ghost6.mp3
+Debug: files\warne_hurt1.mp3
+Debug: files\warne_hurt2.mp3
+Debug: files\warne_hurt3.mp3
+Debug: files\warne_pose.mp3
+Debug: files\warne_sleepy.mp3
+Debug: files\warne_talk1.mp3
+Debug: files\warne_talk2.mp3
+Debug: files\warne_talk3.mp3
+Debug: files\warne_talk4.mp3
+Debug: files\warne_talk5.mp3
+Debug: files\warne_talk6.mp3
+Debug: files\warne_yawn.mp3
+Debug: Building 'warne.fsb'
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_death.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_emote.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost4.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost5.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost6.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_carol_loop.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_pose.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_sleepy.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk4.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk5.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk6.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_yawn.mp3
+Debug: Writing FSB...
+Debug: Finished building FSB
+Debug: 
+Debug: 
+Summary of build:
+SUCCESS: D:/Steam/steamapps/common/Don't Starve Together/mods/Malhzupher/sound/warne.fev
+SUCCESS: warne.fsb
+Debug: 
+Building project 'warne'...
+Debug: Building project D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\warne.fev...
+Debug: Unique sound defs 1/10
+Debug: Retrieving sound file info...
+Debug: Retrieving reverb info...
+Debug: FEV file written ok
+Debug: Unique Envelope Points: 0 of 0
+Debug: Unique Strings: 442 characters of 442
+Debug: Caching sound file details for ''...
+Debug: files\warne_carol_loop.mp3
+Debug: files\warne_death.mp3
+Debug: files\warne_emote.mp3
+Debug: files\warne_ghost1.mp3
+Debug: files\warne_ghost2.mp3
+Debug: files\warne_ghost3.mp3
+Debug: files\warne_ghost4.mp3
+Debug: files\warne_ghost5.mp3
+Debug: files\warne_ghost6.mp3
+Debug: files\warne_hurt1.mp3
+Debug: files\warne_hurt2.mp3
+Debug: files\warne_hurt3.mp3
+Debug: files\warne_pose.mp3
+Debug: files\warne_sleepy.mp3
+Debug: files\warne_talk1.mp3
+Debug: files\warne_talk2.mp3
+Debug: files\warne_talk3.mp3
+Debug: files\warne_talk4.mp3
+Debug: files\warne_talk5.mp3
+Debug: files\warne_talk6.mp3
+Debug: files\warne_yawn.mp3
+Debug: Building 'warne.fsb'
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_death.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_emote.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost4.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost5.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost6.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_pose.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_carol_loop.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_sleepy.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk4.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk5.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk6.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_yawn.mp3
+Debug: Writing FSB...
+Debug: Finished building FSB
+Debug: 
+Debug: 
+Summary of build:
+SUCCESS: D:/Steam/steamapps/common/Don't Starve Together/mods/Malhzupher/sound/warne.fev
+SUCCESS: warne.fsb
+Debug: 
+Building project 'warne'...
+Debug: Building project D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\warne.fev...
+Debug: Unique sound defs 1/10
+Debug: Retrieving sound file info...
+Debug: Retrieving reverb info...
+Debug: FEV file written ok
+Debug: Unique Envelope Points: 0 of 0
+Debug: Unique Strings: 442 characters of 442
+Debug: Caching sound file details for ''...
+Debug: files\warne_carol_loop.mp3
+Debug: files\warne_death.mp3
+Debug: files\warne_emote.mp3
+Debug: files\warne_ghost1.mp3
+Debug: files\warne_ghost2.mp3
+Debug: files\warne_ghost3.mp3
+Debug: files\warne_ghost4.mp3
+Debug: files\warne_ghost5.mp3
+Debug: files\warne_ghost6.mp3
+Debug: files\warne_hurt1.mp3
+Debug: files\warne_hurt2.mp3
+Debug: files\warne_hurt3.mp3
+Debug: files\warne_pose.mp3
+Debug: files\warne_sleepy.mp3
+Debug: files\warne_talk1.mp3
+Debug: files\warne_talk2.mp3
+Debug: files\warne_talk3.mp3
+Debug: files\warne_talk4.mp3
+Debug: files\warne_talk5.mp3
+Debug: files\warne_talk6.mp3
+Debug: files\warne_yawn.mp3
+Debug: Building 'warne.fsb'
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_death.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_emote.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost4.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost5.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_ghost6.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_hurt3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_carol_loop.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_pose.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk1.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_sleepy.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk2.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk3.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk4.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk5.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_talk6.mp3
+Debug: Encoded D:\Steam\steamapps\common\Don't Starve Together\mods\Malhzupher\sound\files\warne_yawn.mp3
+Debug: Writing FSB...
+Debug: Finished building FSB
+Debug: 
+Debug: 
+Summary of build:
+SUCCESS: D:/Steam/steamapps/common/Don't Starve Together/mods/Malhzupher/sound/warne.fev
+SUCCESS: warne.fsb

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Atlas>
+	<Texture filename="warne_inventory.tex" />
+	<Elements>
+		<Element name="warne_glyph.tex" u1="0.001" u2="0.24509375" v2="0.999" v1="0.75490625" variant="" />
+		<Element name="warne_scribetable.tex" u1="0.24709375" u2="0.49509375" v2="0.999" v1="0.751" variant="" />
+		<Element name="warne_soulamulet.tex" u1="0.001" u2="0.24509375" v2="0.75290625" v1="0.5088125" variant="" />
+		<Element name="warne_souljar.tex" u1="0.24709375" u2="0.4911875" v2="0.749" v1="0.50490625" variant="" />
+		<Element name="warne_spellbook.tex" u1="0.49709375" u2="0.7411875" v2="0.999" v1="0.75490625" variant="" />
+		<Element name="warnebone_arm.tex" u1="0.7431875" u2="0.98728125" v2="0.999" v1="0.75490625" variant="" />
+		<Element name="warnebone_generic.tex" u1="0.49709375" u2="0.7411875" v2="0.75290625" v1="0.5088125" variant="" />
+		<Element name="warnebone_leg.tex" u1="0.7431875" u2="0.98728125" v2="0.75290625" v1="0.5088125" variant="" />
+		<Element name="warnebone_ribcage.tex" u1="0.001" u2="0.24509375" v2="0.5068125" v1="0.26271875" variant="" />
+		<Element name="warnebone_skull.tex" u1="0.4931875" u2="0.73728125" v2="0.5068125" v1="0.26271875" variant="" />
+		<Element name="warneminion_builder.tex" u1="0.73928125" u2="0.983375" v2="0.5068125" v1="0.26271875" variant="" />
+		<Element name="warnestaff.tex" u1="0.24709375" u2="0.4911875" v2="0.50290625" v1="0.2588125" variant="" />
+	</Elements>
+</Atlas>

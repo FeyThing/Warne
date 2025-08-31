@@ -1,0 +1,9 @@
+﻿<Atlas>
+	<Texture filename="warne_redux.tex" />
+	<Elements>
+		<Element name="status_lichhealth.tex" u1="0.4775625" u2="0.952125" v2="0.5068125" v1="0.016625" />
+		<Element name="status_lichhealth_bad.tex" u1="0.001" u2="0.4755625" v2="0.5068125" v1="0.016625" />
+		<Element name="status_lichhunger.tex" u1="0.4775625" u2="0.952125" v2="0.999" v1="0.5088125" />
+		<Element name="status_lichhunger_bad.tex" u1="0.001" u2="0.4755625" v2="0.999" v1="0.5088125" />
+	</Elements>
+</Atlas>
