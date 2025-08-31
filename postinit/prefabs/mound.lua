@@ -15,21 +15,18 @@ local function OnFinishCallback(inst, worker, ...)
 end
 
 local function OnRezFn(inst, doer)
-	if inst.components.workable and inst.components.workable:CanBeWorked() then
-		inst.components.workable:Destroy(doer)
-	end
+		inst.AnimState:PlayAnimation("dug")
+        inst:RemoveComponent("workable")
+		if math.random() < 0.5 then
+			inst.components.warne_rezminion:Spawn(doer)
+            doer.components.talker:Say(GetString(doer, "ANNOUNCE_REZ_SKELETON"))
+        else
+            doer.components.talker:Say(GetString(doer, "ANNOUNCE_REZ_NO_SKELETON"))
+		end
 end
 
 local function CanRezFn(inst, doer)
-	if inst.components.workable and inst.components.workable:CanBeWorked() then
-		if math.random() < 0.5 then
-			inst.components.workable:Destroy(doer)
-		else
-			return true
-		end
-	end
-	
-	return false
+	return inst.components.workable and inst.components.workable:CanBeWorked()
 end
 
 ENV.AddPrefabPostInit("mound", function(inst)

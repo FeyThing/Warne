@@ -13,13 +13,15 @@ function Warne_Rezminion:Resurrect(doer)
 	if self.canrez and not self.canrez(self.inst, doer) then
 		return false
 	end
-	
+	if self.onrezfn then
+		self.onrezfn(self.inst, doer)
+	end
+end
+
+function Warne_Rezminion:Spawn(doer)
 	local x, y, z = self.inst.Transform:GetWorldPosition()
 	local minion = SpawnPrefab(self.minion_prefab)
 	
-	if self.onrezfn then
-		self.onrezfn(self.inst, doer, minion)
-	end
 	if minion then
 		minion.Transform:SetPosition(x, y, z)
 		if minion.sg then

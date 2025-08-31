@@ -6,6 +6,18 @@ STRINGS.CHARACTER_SURVIVABILITY.warne = "Grim"
 
 STRINGS.CHARACTERS.WARNE = require "speech_warne"
 
+STRINGS.CHARACTERS.WARNE.ANNOUNCE_REZ_SKELETON = {
+  "Rise!",
+  "Wakey, wakey!",
+  "Obey, now!",
+}
+
+STRINGS.CHARACTERS.WARNE.ANNOUNCE_REZ_NO_SKELETON = {
+  "Unbelievable!",
+  "What! Nothing?",
+  "How could it be empty!",
+}
+
 STRINGS.NAMES.WARNE = "Malhz'upher"
 STRINGS.SKIN_NAMES.warne_none = "Malhz'upher"
 
@@ -113,7 +125,7 @@ STRINGS.SKILLTREE.WARNE = {
 		BONE_COLLECTOR1_DESC = "Mobs have a 20% higher chance to drop parts when you, your minions or a (player affected by your spells) kills it.",
 		
 		BONE_COLLECTOR2_TITLE = "Bone Collector 2",
-		BONE_COLLECTOR2_DESC = "You have a chance of finding rare bones from fishing, digging graves, and in tumbleweeds.",
+		BONE_COLLECTOR2_DESC = "You have a chance of finding bones from fishing, digging graves, and in tumbleweeds.",
 		
 		COMMAND_TITLE = "Command",
 		COMMAND_DESC = "You have access to a command wheel where you can now give proper orders to your minions, instead of them copying what you do.",
@@ -137,7 +149,7 @@ STRINGS.SKILLTREE.WARNE = {
 		SOUL_ECHO_DESC = "When you kill mobs, you automatically absorb their soul. ",
 
 		DEATH_DISSONANCE_TITLE = "Death Dissonance",
-		DEATH_DISSONANCE_DESC = "When you die, your Wraith form can momentarily take control of any skeletal minions waiting for you to revive. \nThis does not stop the ghost drain of allies and you are still considered dead until you resurrect yourself.",
+		DEATH_DISSONANCE_DESC = "When you die, your Wraith form can momentarily take control of any skeletal minions waiting for you to revive. \nThis does not stop the ghost drain of allies and you are still considered dead until you resurrect yourself from kills.",
 		
 		DEATH_SIPHON_TITLE = "Death Siphon",
 		DEATH_SIPHON_DESC = "Your Death touch, chains onto nearby enemies and leeches off them.",
