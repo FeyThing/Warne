@@ -7,6 +7,7 @@ local AddClassPostConstruct = ENV.AddClassPostConstruct
 
 local UIAnim = require("widgets/uianim")
 local WarneSpellBookScreen = require("screens/warnespellbookpopupscreen")
+local WarneSpellControls = require("widgets/warnespellcontrols")
 
 AddClassPostConstruct("widgets/itemtile", function(self, invitem)
 	local function ToggleSoulBoundFX()
@@ -50,6 +51,7 @@ POPUPS.WARNESPELLBOOK.fn = function(inst, show)
     end
 end
 
+
 AddClassPostConstruct("screens/playerhud", function(self)
     function self:OpenWarneSpellBook()
         self:CloseWarneSpellBook()
@@ -67,4 +69,13 @@ AddClassPostConstruct("screens/playerhud", function(self)
             self.WarneSpellBook = nil
         end
     end
+end)
+
+-- SpellButton
+
+AddClassPostConstruct("widgets/controls", function(self)
+	if self.owner and self.owner.prefab == "warne" then
+		self.warnespellcontrols = self.bottom_root:AddChild(WarneSpellControls(self.owner))
+		self.warnespellcontrols:SetPosition(-590, 70, 0)
+	end
 end)

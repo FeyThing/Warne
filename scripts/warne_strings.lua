@@ -131,7 +131,7 @@ STRINGS.SKILLTREE.WARNE = {
 		COMMAND_DESC = "You have access to a command wheel where you can now give proper orders to your minions, instead of them copying what you do.",
 		
 		ADVANCED_SKELETONS_TITLE = "Advanced Skeletons",
-		ADVANCED_SKELETONS_DESC = "Your skeletons begin to develop some form of self preservation, and learn to kite enemies.",
+		ADVANCED_SKELETONS_DESC = "Your skeletons begin to develop some form of self preservation. Their max health increases and they learn to kite enemies better.",
 		
 		DEATH_GUARD_TITLE = "Death Guard",
 		DEATH_GUARD_DESC = "You learn the command Guard. Your Minions can plant themselves in one spot, and become aggressive sentries towards unfriendly mobs that enter their range. \nYou can craft special weapons and armor for them befitting for your guards.",
