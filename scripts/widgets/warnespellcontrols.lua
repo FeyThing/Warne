@@ -2,6 +2,7 @@ local Widget = require "widgets/widget"
 local Image = require "widgets/image"
 local ImageButton = require "widgets/imagebutton"
 
+
 local BOOK_ATLAS = "images/warne_spellbook_ui.xml"
 
 --[[local function OnSpellChangeLeft()
@@ -17,9 +18,10 @@ local SPELLSCALE = .7
 local WarneSpellControls = Class(Widget, function(self)
     Widget._ctor(self, "WarneSpellControls")
 
-    self.spellBtn = self:AddChild(Image(BOOK_ATLAS, "createspell_button.tex", nil, nil, nil, nil, {1,1}, {0,0}))
+    self.spellBtn = self:AddChild(ImageButton(BOOK_ATLAS, "createspell_button.tex", nil, nil, nil, nil, {1,1}, {0,0}))
     self.spellBtn:SetScale(SPELLSCALE, SPELLSCALE, SPELLSCALE)
     self.spellBtn:SetPosition(0, -40, 0)
+    self.spellBtn:SetText(STRINGS.UI.WARNE_SPELLS.SPELL)
 
     self.rotleft = self:AddChild(ImageButton(HUD_ATLAS, "turnarrow_icon.tex", nil, nil, nil, nil, {1,1}, {0,0}))
     self.rotleft:SetPosition(-80, -40, 0)

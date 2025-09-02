@@ -76,6 +76,7 @@ STRINGS.UI.WARNE_SPELLS = {
 	GLYPHS = "Glyphs",
 	COMPLETION = "{num}/{max}",
 	CREATE_SPELL = "Create",
+	SPELL = "None", --- temporary for quick spell select
 	NAMES = {
 		augment_amplify = "Amplify",
 		augment_bounce = "Bounce",
