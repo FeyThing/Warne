@@ -25,6 +25,7 @@ local prefabs = {
 }
 
 local components = {
+	"book",
 	"healer",
 	"health",
 	"sanity",

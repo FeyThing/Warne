@@ -69,6 +69,8 @@ STRINGS.ACTIONS.SITCOMMAND_CANCEL = "Order to Follow"
 
 STRINGS.ACTIONS.WARNE_SCRIBE = "Scribe"
 
+STRINGS.CHARACTERS.WARNE.ACTIONFAIL.READ.NOLICHSTAFF = "can't without my staff" -- to-do Xeno write this
+
 -- Spellbook
 STRINGS.UI.WARNE_SPELLS = {
 	AUGMENT = "Augment",

@@ -92,6 +92,54 @@ local function ItemLose(inst)
 	end
 end
 
+local function OnPeruseRestoreStaff(inst, book, staff)
+	if inst.manabooks[book.prefab] then
+		if staff and staff.components.finiteuses then
+			staff.components.finiteuses:Repair(TUNING.WARNE_MAXCHARGE * inst.manabooks[book.prefab])
+			
+			if inst.SoundEmitter and inst.manabooks[book.prefab] ~= 0 then -- do we play the sound if we get 0 mana? doesn't make sense to me but its your mod
+				inst.SoundEmitter:PlaySound("dontstarve/common/nightmareAddFuel")
+			end
+		end
+	end
+end
+
+local function ReadOverride(self, book, ...)	
+	if book.components.book then
+		-- Find every staff we hold
+		local staves = self.inst.components.inventory:FindItems(function(obj) return obj:HasTag("lichfocus") end)
+		
+		-- If no staves found, fail action
+		if next(staves) == nil then
+			return false, "NOLICHSTAFF"
+		end
+		
+		-- Try perusing the book
+		local success, reason = book.components.book:OnPeruse(self.inst)
+		
+		if success then
+			-- Go through every staff
+			local chosen_staff
+			for i,v in ipairs(staves) do
+				-- If staff is equipped, choose this one
+				if v.components.equippable:IsEquipped() then
+					chosen_staff = v
+					break
+				end
+			end
+			-- If no staff is equipped, choose the first (left-most) one in the inventory
+			if chosen_staff == nil then
+				chosen_staff = staves[1]
+			end
+			
+			-- Chosen staff will be the one to have its mana restored
+			OnPeruseRestoreStaff(self.inst, book, chosen_staff)
+		end
+		
+		return success, reason
+	end
+end
+
 --
 
 local function OnSave(inst, data)
@@ -199,18 +247,7 @@ local master_postinit = function(inst)
 	}
 	inst:AddComponent("reader")
 	inst.components.reader:SetSanityPenaltyMultiplier(0) --no sanity loss from reading
-	inst.components.reader.onread = function(inst, book)
-		if inst.manabooks[book.prefab] then
-			local equipped_staff = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS) or nil
-			if equipped_staff and equipped_staff:HasTag("lichfocus") and equipped_staff.components.finiteuses then
-				equipped_staff.components.finiteuses:Repair(TUNING.WARNE_MAXCHARGE * inst.manabooks[book.prefab])
-						
-				if inst.SoundEmitter and inst.manabooks[book.prefab] ~= 0 then -- do we play the sound if we get 0 mana? doesn't make sense to me but its your mod
-					inst.SoundEmitter:PlaySound("dontstarve/common/nightmareAddFuel")
-				end
-			end
-		end
-	end
+	inst.components.reader.Read = ReadOverride
 	
 	inst:AddComponent("preserver")
 	inst.components.preserver:SetPerishRateMultiplier(TUNING.PERISH_WARNE_MULT)
