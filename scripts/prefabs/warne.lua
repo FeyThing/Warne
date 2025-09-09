@@ -185,7 +185,32 @@ local master_postinit = function(inst)
 	inst:AddComponent("staffsanity")	
 	inst.components.staffsanity:SetMultiplier(TUNING.WARNE_STAFFSANITY)
 	
+	inst.manabooks = {
+		book_web = 0.05, -- Overcoming Arachnophobia = 5%
+		book_tentacles = 0.05, --On Tentacles
+		book_temperature = 0.1, -- Tempering Temperatures
+		book_rain = 0.1, -- Practical Rain Rituals
+		book_fire = 0.15, -- Pyrokinetics Explained
+		book_brimstone = 0.15, -- The End is Nigh!
+		book_moon = 0.15, -- Lunar Grimoire
+		book_light = 0.15, --Lux Aeterna
+		book_light_upgraded = 0.2, --Lux Aeterna Redux
+		book_research_station = 0.2, --The Everything Encyclopedia
+	}
 	inst:AddComponent("reader")
+	inst.components.reader:SetSanityPenaltyMultiplier(0) --no sanity loss from reading
+	inst.components.reader.onread = function(inst, book)
+		if inst.manabooks[book.prefab] then
+			local equipped_staff = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS) or nil
+			if equipped_staff and equipped_staff:HasTag("lichfocus") and equipped_staff.components.finiteuses then
+				equipped_staff.components.finiteuses:Repair(TUNING.WARNE_MAXCHARGE * inst.manabooks[book.prefab])
+						
+				if inst.SoundEmitter and inst.manabooks[book.prefab] ~= 0 then -- do we play the sound if we get 0 mana? doesn't make sense to me but its your mod
+					inst.SoundEmitter:PlaySound("dontstarve/common/nightmareAddFuel")
+				end
+			end
+		end
+	end
 	
 	inst:AddComponent("preserver")
 	inst.components.preserver:SetPerishRateMultiplier(TUNING.PERISH_WARNE_MULT)

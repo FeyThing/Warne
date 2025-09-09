@@ -1,14 +1,3 @@
-
------------------------------------
--- This file is the template for other speech files. Once a new string is added here, simply run PropagateSpeech.bat
--- If you are adding strings that are character specific, or not required by all characters, you will still need to add the strings to speech_wilson.lua,
--- and then add the context string to speech_from_generic.lua. Once you run the PropagateSpeech.bat, you can go into your character's speech file and simply uncomment the new lines.
---
--- There are some caveats about maintaining sane formatting in this file.
---      -No single line lua tables
---      -Opening and closing brackets should be on their own line
---      -If wilson's speech has X unnamed strings in a table, then all other speech files must have at least X unnamed strings in that context too (example, CHESSPIECE_MOOSEGOOSE has 1 string in wilson, but 2 in wortox), this requirement could be relaxed if required by motifying po_vault.lua)
-
 return {
 
 
@@ -314,19 +303,19 @@ return {
         --wickerbottom specific action
         READ =
         {
-            GENERIC = "only_used_by_waxwell_and_wicker",
-            NOBIRDS = "only_used_by_waxwell_and_wicker",
-            NOWATERNEARBY = "only_used_by_waxwell_and_wicker",
-            TOOMANYBIRDS = "only_used_by_waxwell_and_wicker",
-            WAYTOOMANYBIRDS = "only_used_by_waxwell_and_wicker",
-            NOFIRES =       "only_used_by_waxwell_and_wicker",
-            NOSILVICULTURE = "only_used_by_waxwell_and_wicker",
-            NOHORTICULTURE = "only_used_by_waxwell_and_wicker",
-            NOTENTACLEGROUND = "only_used_by_waxwell_and_wicker",
-            NOSLEEPTARGETS = "only_used_by_waxwell_and_wicker",
-            TOOMANYBEES = "only_used_by_waxwell_and_wicker",
-            NOMOONINCAVES = "only_used_by_waxwell_and_wicker",
-            ALREADYFULLMOON = "only_used_by_waxwell_and_wicker",
+            GENERIC = "There's nothing to extract from it.",
+            NOBIRDS = "There's nothing to extract from it.",
+            NOWATERNEARBY = "There's nothing to extract from it.",
+            TOOMANYBIRDS = "Too much, too much!",
+            WAYTOOMANYBIRDS = "Now this is just ridiculous!",
+            NOFIRES =       "There's nothing to extract from it.",
+            NOSILVICULTURE = "There's nothing to extract from it.",
+            NOHORTICULTURE = "There's nothing to extract from it.",
+            NOTENTACLEGROUND = "There's nothing to extract from it.",
+            NOSLEEPTARGETS = "There's nothing to extract from it.",
+            TOOMANYBEES = "No no no, not the bees!",
+            NOMOONINCAVES = "Does it look like there's a moon in here?",
+            ALREADYFULLMOON = "The moon exists already.",
         },
 		REMOTE_TELEPORT =
 		{
@@ -1235,26 +1224,26 @@ return {
 			GENERIC = "Why study when I can experiment?",
 			BURNT = "I think the library's closed.",
 		},
-        BOOK_BIRDS = "No point studying when I can just wing it.",
-        BOOK_TENTACLES = "Someone'll get suckered into reading this.",
-        BOOK_GARDENING = "I see no farm in reading that.",
-		BOOK_SILVICULTURE = "I'll stick to my own experiments.",
-		BOOK_HORTICULTURE = "I see no farm in reading that.",
-        BOOK_SLEEP = "Strange, it's just 500 pages of telegraph codes.",
-        BOOK_BRIMSTONE = "The beginning was dull, but got better near the end.",
+        BOOK_BIRDS = "It's a nature book about birds.",
+        BOOK_TENTACLES = "I know some people who would enjoy this a little too much.",
+        BOOK_GARDENING = "Like this would ever help me!",
+		BOOK_SILVICULTURE = "Bah, another nature book.",
+		BOOK_HORTICULTURE = "It grows for them, but when I try it the plants hate me!",
+        BOOK_SLEEP = "What, who wrote this? Even I have standards.",
+        BOOK_BRIMSTONE = "Mwahahaha!",
 
         BOOK_FISH = "It didn't really hook me.",
-        BOOK_FIRE = "I don't feel a burning need to read it.",
-        BOOK_WEB = "I'm not scared of spiders! I'm not!",
-        BOOK_TEMPERATURE = "My thoughts on it are only lukewarm.",
-        BOOK_LIGHT = "Whoever wrote this must've been pretty bright.",
-        BOOK_RAIN = "That doesn't sound very scientific.",
-        BOOK_MOON = "All this interest in the moon is probably just a phase.",
-        BOOK_BEES = "I don't get all the buzz around this one.",
+        BOOK_FIRE = "Now this is what I call fire.",
+        BOOK_WEB = "I suppose they're cool enough.",
+        BOOK_TEMPERATURE = "Quite useful.",
+        BOOK_LIGHT = "Perfect!",
+        BOOK_RAIN = "Ahaha, manipulating weather galore!",
+        BOOK_MOON = "It describes some fascinating concepts about the moon.",
+        BOOK_BEES = "It doesn't even describe how I can weaponize them!",
 
-        BOOK_HORTICULTURE_UPGRADED = "It's about as exciting as watching grass grow.",
-        BOOK_RESEARCH_STATION = "Wickerbottom likes to do everything by the book.",
-        BOOK_LIGHT_UPGRADED = "Brilliant!",
+        BOOK_HORTICULTURE_UPGRADED = "Even with throrough descriptions, it fails me.",
+        BOOK_RESEARCH_STATION = "Ahaha, knowledge unlimited!",
+        BOOK_LIGHT_UPGRADED = "Excellent!",
 
         FIREPEN = "Strike while the pen's hot!",
 
