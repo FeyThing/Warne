@@ -10,4 +10,5 @@ PrefabFiles = {
 	"warne_glyph",
 	"warneminion",
 	"warne_scribetable",
+	"warne_trail_fx",
 }

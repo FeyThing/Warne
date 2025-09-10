@@ -9,6 +9,8 @@ local minions = {
 
 local function OnRezFn(inst, doer)
 	inst:Remove()
+	inst.components.warne_rezminion:Spawn(doer)
+	doer.components.talker:Say(GetString(doer, "ANNOUNCE_REZ_SKELETON"))
 end
 
 for i, prefab in ipairs(minions) do

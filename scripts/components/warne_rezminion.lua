@@ -16,6 +16,8 @@ function Warne_Rezminion:Resurrect(doer)
 	if self.onrezfn then
 		self.onrezfn(self.inst, doer)
 	end
+
+	return true
 end
 
 function Warne_Rezminion:Spawn(doer)

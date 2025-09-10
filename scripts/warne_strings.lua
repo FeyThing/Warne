@@ -69,7 +69,7 @@ STRINGS.ACTIONS.SITCOMMAND_CANCEL = "Order to Follow"
 
 STRINGS.ACTIONS.WARNE_SCRIBE = "Scribe"
 
-STRINGS.CHARACTERS.WARNE.ACTIONFAIL.READ.NOLICHSTAFF = "can't without my staff" -- to-do Xeno write this
+STRINGS.CHARACTERS.WARNE.ACTIONFAIL.READ.NOLICHSTAFF = "No spell focus, means no magic." 
 
 -- Spellbook
 STRINGS.UI.WARNE_SPELLS = {
@@ -128,19 +128,19 @@ STRINGS.SKILLTREE.WARNE = {
 		BONE_COLLECTOR1_DESC = "Mobs have a 20% higher chance to drop parts when you, your minions or a (player affected by your spells) kills it.",
 		
 		BONE_COLLECTOR2_TITLE = "Bone Collector 2",
-		BONE_COLLECTOR2_DESC = "You have a chance of finding bones from fishing, digging graves, and in tumbleweeds.",
+		BONE_COLLECTOR2_DESC = "There is a chance of finding bones from fishing, digging graves, and in tumbleweeds.",
 		
 		COMMAND_TITLE = "Command",
 		COMMAND_DESC = "You have access to a command wheel where you can now give proper orders to your minions, instead of them copying what you do.",
 		
 		ADVANCED_SKELETONS_TITLE = "Advanced Skeletons",
-		ADVANCED_SKELETONS_DESC = "Your skeletons begin to develop some form of self preservation. Their max health increases and they learn to kite enemies better.",
+		ADVANCED_SKELETONS_DESC = "Skeleton minions begin to develop some form of self preservation. Their max health increases and they learn to kite enemies better.",
 		
 		DEATH_GUARD_TITLE = "Death Guard",
 		DEATH_GUARD_DESC = "You learn the command Guard. Your Minions can plant themselves in one spot, and become aggressive sentries towards unfriendly mobs that enter their range. \nYou can craft special weapons and armor for them befitting for your guards.",
 		
 		INFUSED_MINIONS_TITLE = "Infused Minions",
-		INFUSED_MINIONS_DESC = "Your skeleton minions appearance changes. They start to become sturdier, bulkier and stronger. \nBones can be used to modify them and boost their effectiveness for specific tasks.",
+		INFUSED_MINIONS_DESC = "Skeleton minions appearance changes. They start to become sturdier, bulkier and stronger. \nBones can be used to modify them and boost their effectiveness for specific tasks.",
 		
 		ARTIFICIAL_SOUL1_TITLE = "Artificial Soul 1",
 		ARTIFICIAL_SOUL1_DESC = "The rot you accumulated is now of use. You can use rot, ash, and boneshards to create soul dust. Which you can feed to your phylactery to restore 5 percent of it.",
@@ -158,7 +158,7 @@ STRINGS.SKILLTREE.WARNE = {
 		DEATH_SIPHON_DESC = "Your Death touch, chains onto nearby enemies and leeches off them.",
 		
 		DEATH_BURST_TITLE = "Death Burst",
-		DEATH_BURST_DESC = "Your Death touch builds up before bursting, inflicting more damage and dealing splash.",
+		DEATH_BURST_DESC = "Death touch builds up before bursting, inflicting more damage and dealing splash.",
 		
 		SOUL_WEAPONRY1_TITLE = "Soul Weaponry 1",
 		SOUL_WEAPONRY1_DESC = "You can perform a ritual at resurrection stones at night per 20 days to bind your soul to a weapon instead of a jar. \nThe weapon’s durability is removed, is transformed, retains its previous stats/effects and it becomes your phylactery you can attune to.",
@@ -188,7 +188,7 @@ STRINGS.SKILLTREE.WARNE = {
 		CURSE_BEARER2_DESC = "You have built up tolerance to cursing yourself to the point its negative effects are half as effective on you.",
 		
 		ADVANCED_SPELLCASTER_TITLE = "Advanced Spellcaster",
-		ADVANCED_SPELLCASTER_DESC = "You can now combine 3 glyphs together",
+		ADVANCED_SPELLCASTER_DESC = "3 glyphs can now be combined together",
 		
 		LUNAR_CONQUEROR_TITLE = "Lunar Conqueror",
 		LUNAR_CONQUEROR_DESC = "You learn lunar magic, and your minions(including clockworks if you took Artificer 2) become lunar aligned (they visually mutate and they deal extra lunar damage.)",

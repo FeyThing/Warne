@@ -158,7 +158,7 @@ function WarneMinionBrain:OnStart()
 		WhileNode(function() return GetLeader(self.inst) and GetLeader(self.inst).components.pinnable and GetLeader(self.inst).components.pinnable:IsStuck() end, "Leader Phlegmed",
 			DoAction(self.inst, RescueLeaderAction, "Rescue Leader", true)),
 		WhileNode(function() return self.inst.components.combat.target and self.inst.components.combat:InCooldown() end, "Dodge",
-			RunAway(self.inst, function() return self.inst.components.combat.target end, RUN_AWAY_DIST, STOP_RUN_AWAY_DIST)),
+			RunAway(self.inst, function() return self.inst.components.combat.target end, RUN_AWAY_DIST, STOP_RUN_AWAY_DIST)),			
 		
 		IfThenDoWhileNode(function() return StartWorkingCondition(self.inst) end, function() return KeepWorkingAction(self.inst) end, "Working",
 			LoopNode{
@@ -167,6 +167,7 @@ function WarneMinionBrain:OnStart()
 		WhileNode(function() return self.inst.components.combat.target == nil or not self.inst.components.combat:InCooldown() end, "AttackMomentarily",
 			Follow(self.inst, GetLeader, MIN_FOLLOW_DIST, TARGET_FOLLOW_DIST, MAX_FOLLOW_DIST),
 			FaceEntity(self.inst, GetTraderFn, KeepTraderFn)),
+			RunAway(self.inst, "player", START_RUN_DIST, STOP_RUN_DIST, function(target) return ShouldRunAway(self.inst, target) end ),
 		IfNode(function() return GetLeader(self.inst) end, "Has Leader",
 			FaceEntity(self.inst, GetFaceTargetFn, KeepFaceTargetFn)),
 		FaceEntity(self.inst, GetFaceTargetNearestPlayerFn, KeepFaceTargetNearestPlayerFn),

@@ -690,7 +690,7 @@ return {
 	},
 
     --hallowed nights
-    ANNOUNCE_SPOOKED = "Did you see that?!",
+    ANNOUNCE_SPOOKED = "Am I supposed to be afriad?",
 	ANNOUNCE_BRAVERY_POTION = "I don't see the point of taking this, it's for spineless morons.",
 	ANNOUNCE_MOONPOTION_FAILED = "Heh...",
 
@@ -905,7 +905,7 @@ return {
 	},
 
 	ANNOUNCE_WEIGHT = "Weight: {weight}",
-	ANNOUNCE_WEIGHT_HEAVY  = "Weight: {weight}\nI'm a fishing heavyweight!",
+	ANNOUNCE_WEIGHT_HEAVY  = "Weight: {weight}\nVictory for me!",
 
 	ANNOUNCE_WINCH_CLAW_MISS = "Gah, how is it possible that it missed!",
 	ANNOUNCE_WINCH_CLAW_NO_ITEM = "Drat! I've come up empty handed.",
@@ -918,38 +918,38 @@ return {
     ANNOUNCE_CANTBUILDHERE_WATCHTOWER = "only_used_by_wurt",
     ANNOUNCE_READ_BOOK =
     {
-        BOOK_SLEEP = "only_used_by_wurt",
-        BOOK_BIRDS = "only_used_by_wurt",
-        BOOK_TENTACLES =  "only_used_by_wurt",
-        BOOK_BRIMSTONE = "only_used_by_wurt",
-        BOOK_GARDENING = "only_used_by_wurt",
-		BOOK_SILVICULTURE = "only_used_by_wurt",
-		BOOK_HORTICULTURE = "only_used_by_wurt",
+        BOOK_SLEEP = "What, who wrote this? Even I have standards.",
+        BOOK_BIRDS = "It's just a nature book about birds.",
+        BOOK_TENTACLES =  "I know some people who would enjoy this a little too much.",
+        BOOK_BRIMSTONE = "Ouch that edge, but great power!",
+        BOOK_GARDENING = "Maybe reading about them will improve my natural charm.",
+		BOOK_SILVICULTURE = "She sure possesses a lot of nature books.",
+		BOOK_HORTICULTURE = "It grows for them, but when I try it the plants hate me!",
 
-        BOOK_FISH = "only_used_by_wurt",
-        BOOK_FIRE = "only_used_by_wurt",
-        BOOK_WEB = "only_used_by_wurt",
-        BOOK_TEMPERATURE = "only_used_by_wurt",
-        BOOK_LIGHT = "only_used_by_wurt",
-        BOOK_RAIN = "only_used_by_wurt",
-        BOOK_MOON = "only_used_by_wurt",
-        BOOK_BEES = "only_used_by_wurt",
+        BOOK_FISH = "It's information neitherless, even if about fish.",
+        BOOK_FIRE = "Now this is what I call fire.",
+        BOOK_WEB = "I give it a solid 5 out of 10.",
+        BOOK_TEMPERATURE = "Quite useful for once.",
+        BOOK_LIGHT = "Astonishing!",
+        BOOK_RAIN = "Mwahaha, manipulating weather galore!",
+        BOOK_MOON = "The concepts about the moon here is disturbing but intriguing.",
+        BOOK_BEES = "It doesn't even describe how I can weaponize them! How does the hag do it?",
 
-        BOOK_HORTICULTURE_UPGRADED = "only_used_by_wurt",
-        BOOK_RESEARCH_STATION = "only_used_by_wurt",
-        BOOK_LIGHT_UPGRADED = "only_used_by_wurt",
+        BOOK_HORTICULTURE_UPGRADED = "Even with thorough descriptions, it fails me.",
+        BOOK_RESEARCH_STATION = "Ahaha, knowledge unlimited!",
+        BOOK_LIGHT_UPGRADED = "Harnessing light means power!",
     },
 
-    ANNOUNCE_WEAK_RAT = "This carrat is in no shape to be training.",
+    ANNOUNCE_WEAK_RAT = "This abomidable rat shaped creature has exhausted its usefulness.",
 
     ANNOUNCE_CARRAT_START_RACE = "Let the experim- er, race begin!",
 
     ANNOUNCE_CARRAT_ERROR_WRONG_WAY = {
-        "No, no! You're going the wrong way!",
-        "Turn around, white eyes!",
+        "Wrong way insolent creature!",
+        "Pay attention, moronic vegetable!",
     },
     ANNOUNCE_CARRAT_ERROR_FELL_ASLEEP = "Don't you dare! Wake up, we have a race to win!",
-    ANNOUNCE_CARRAT_ERROR_WALKING = "Don't walk, RUN!",
+    ANNOUNCE_CARRAT_ERROR_WALKING = "Quit walking, RUN!",
     ANNOUNCE_CARRAT_ERROR_STUNNED = "Get up! GO GO!",
 
     ANNOUNCE_GHOST_QUEST = "only_used_by_wendy",
@@ -1226,24 +1226,24 @@ return {
 		},
         BOOK_BIRDS = "It's a nature book about birds.",
         BOOK_TENTACLES = "I know some people who would enjoy this a little too much.",
-        BOOK_GARDENING = "Like this would ever help me!",
-		BOOK_SILVICULTURE = "Bah, another nature book.",
+        BOOK_GARDENING = "Maybe reading about them will improve my natural charm.",
+		BOOK_SILVICULTURE = "She sure possesses a lot of nature books.",
 		BOOK_HORTICULTURE = "It grows for them, but when I try it the plants hate me!",
         BOOK_SLEEP = "What, who wrote this? Even I have standards.",
-        BOOK_BRIMSTONE = "Mwahahaha!",
+        BOOK_BRIMSTONE = "And I thought I was edgy.",
 
-        BOOK_FISH = "It didn't really hook me.",
+        BOOK_FISH = "It's information neither less, even if about fish.",
         BOOK_FIRE = "Now this is what I call fire.",
         BOOK_WEB = "I suppose they're cool enough.",
-        BOOK_TEMPERATURE = "Quite useful.",
-        BOOK_LIGHT = "Perfect!",
-        BOOK_RAIN = "Ahaha, manipulating weather galore!",
-        BOOK_MOON = "It describes some fascinating concepts about the moon.",
-        BOOK_BEES = "It doesn't even describe how I can weaponize them!",
+        BOOK_TEMPERATURE = "Quite useful for once.",
+        BOOK_LIGHT = "Astonishing!",
+        BOOK_RAIN = "Mwahaha, manipulating weather galore!",
+        BOOK_MOON = "The concepts about the moon here is disturbing but intriguing.",
+        BOOK_BEES = "It doesn't even describe how I can weaponize them! How does the hag do it?",
 
         BOOK_HORTICULTURE_UPGRADED = "Even with throrough descriptions, it fails me.",
         BOOK_RESEARCH_STATION = "Ahaha, knowledge unlimited!",
-        BOOK_LIGHT_UPGRADED = "Excellent!",
+        BOOK_LIGHT_UPGRADED = "Harnessing light means power!",
 
         FIREPEN = "Strike while the pen's hot!",
 
@@ -5233,26 +5233,26 @@ return {
         NITRE_FORMATION = "It's definitely some kind of rock.",
         DREADSTONE_STACK = "It's coming from deep down in those chasms...",
 
-        SCRAPBOOK_PAGE = "Someone else out there likes to scrapbook.",
+        SCRAPBOOK_PAGE = "They're either dead or part of another missing puzzle.",
 
         LEIF_IDOL = "Carving a tree out of wood seems a bit redundant.",
-        WOODCARVEDHAT = "It looks like it's been lovingly carved.",
-        WALKING_STICK = "It's a very nice stick.",
+        WOODCARVEDHAT = "Am I supposed to compliment this?",
+        WALKING_STICK = "Nice! I've been wanting another stick to poke someone with!",
 
         IPECACSYRUP = "I don't think I want to eat this.",
         BOMB_LUNARPLANT_WORMWOOD = "Our friend seems to be getting more in touch with his lunar roots.", -- Unused
         WORMWOOD_MUTANTPROXY_CARRAT =
         {
-        	DEAD = "That's the end of that.",
-        	GENERIC = "Are carrots supposed to have legs?",
-        	HELD = "You're kind of ugly up close.",
-        	SLEEPING = "It's almost cute.",
+        	DEAD = "It's dead. Whelp that's the end of that.",
+        	GENERIC = "That's not the strangest thing I've seen.",
+        	HELD = "Do people eat these?",
+        	SLEEPING = "It's abomidable.",
         },
         WORMWOOD_MUTANTPROXY_LIGHTFLIER = "How strange, carrying one makes my pocket feel lighter!",
 		WORMWOOD_MUTANTPROXY_FRUITDRAGON =
 		{
-			GENERIC = "It's cute, but it's not ripe yet.",
-			RIPE = "I think it's ripe now.",
+			GENERIC = "Generally speaking this shouldn't make sense.",
+			RIPE = "It rippened.",
 			SLEEPING = "It's snoozing.",
 		},
 
@@ -5266,35 +5266,35 @@ return {
 		SUPPORT_PILLAR_DREADSTONE_COMPLETE = "That looks dreadfully strong.",
 		SUPPORT_PILLAR_DREADSTONE_BROKEN = "How dreadful.",
 
-        WOLFGANG_WHISTLE = "It gives me terrible flashbacks to the gym classes of my youth...",
+        WOLFGANG_WHISTLE = "No! Do these bones look like they lift?",
 
         -- Rifts 3
 
-        MUTATEDDEERCLOPS = "It's got a little something in its eye.",
-        MUTATEDWARG = "What big, glowing eyes you have!",
-        MUTATEDBEARGER = "Things are about to get hairy...",
+        MUTATEDDEERCLOPS = "It's got a little something stuck in its eye.",
+        MUTATEDWARG = "Don't look at me like that!",
+        MUTATEDBEARGER = "Great, now it's twice the annoyance",
 
         LUNARFROG = "Great, it spread to the frogs too.",
 
         DEERCLOPSCORPSE =
         {
-            GENERIC  = "It's over... right?",
+            GENERIC  = "If I had enough power, it'll be tempting.",
             BURNING  = "Can't be too careful.",
-            REVIVING = "I don't want to believe what my eyes are seeing!",
+            REVIVING = "Well I should had seen that coming!",
         },
 
         WARGCORPSE =
         {
-            GENERIC  = "Why do I still feel uneasy?",
+            GENERIC  = "Hmmm I shouldn't just leave it there.",
             BURNING  = "It's for the best.",
-            REVIVING = "What in the name of science?!",
+            REVIVING = "Ah, so it's entering my territory!",
         },
 
         BEARGERCORPSE =
         {
-            GENERIC  = "What an unbearable stench!",
+            GENERIC  = "Maybe with enough power I could take control of it!",
             BURNING  = "That was close.",
-            REVIVING = "There must be a scientific explanation for this!",
+            REVIVING = "Wait, you're not supposed to do that! I am!",
         },
 
         BEARGERFUR_SACK = "There's still fur on it. Chilling.",
@@ -5438,14 +5438,14 @@ return {
         WAXED_PLANT = "It's frozen in fear!", -- Used for all waxed plants, from farm plants to trees.
 
         STORAGE_ROBOT = {
-            GENERIC = "Let's not get carried away.",
-            BROKEN = "It's broken.",
+            GENERIC = "It has a storage mechanism for your convience.",
+            BROKEN = "Bah, useless.",
         },
 
         SCRAP_MONOCLEHAT = "This is where improvising gets you.",
         SCRAPHAT = "This is by far the stupidest looking hat I have worn!",
 
-        FENCE_JUNK = "Tell me it's ugly, I won't take a fence.",
+        FENCE_JUNK = "It garbage, pretending to be a fence.",
         JUNK_PILE = "One mans trash is another mans treasure.",
         JUNK_PILE_BIG = "Now the question here is how did all of this junk get here?",
 

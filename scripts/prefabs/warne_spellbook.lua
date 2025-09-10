@@ -63,6 +63,10 @@ local function fn()
 		
 		return inst
 	end
+
+	---note redo anime with wickerbottom book build
+
+	--inst.swap_build = "warne_spellbook"
 	
 	inst:AddComponent("inspectable")
 	inst:AddComponent("book")
