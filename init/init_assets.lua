@@ -61,20 +61,9 @@ Assets = {
 
 AddMinimapAtlas("images/warne_minimap.xml")
 
-local ITEMS = {
-	"warne_glyph",
-	"warne_spellbook",
-	"warne_souljar",
-	"warnebone_arm",
-	"warnebone_generic",
-	"warnebone_leg",
-	"warnebone_ribcage",
-	"warnebone_skull",
-	"warneminion_builder",
-	"warnestaff",
-	"warne_scribetable",
-}
-
-for i, v in pairs(ITEMS) do
-	RegisterInventoryItemAtlas("images/warne_inventory.xml", v..".tex")
+local WARNE_ICONS = GLOBAL.resolvefilepath("images/warne_inventory.xml")
+local _GetInventoryItemAtlas_Internal = GLOBAL.GetInventoryItemAtlas_Internal
+function GLOBAL.GetInventoryItemAtlas_Internal(imagename, ...)
+    return GLOBAL.TheSim:AtlasContains(WARNE_ICONS, imagename) and WARNE_ICONS
+            or _GetInventoryItemAtlas_Internal(imagename, ...)
 end
