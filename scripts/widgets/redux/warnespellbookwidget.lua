@@ -43,15 +43,15 @@ function WarneSpellBookWidget:BuildSpellz()
 	self.num_spellz_discovered = 0
 	
 	self.form_list = self.root:AddChild(self:ListSpells("form"))
-	self.form_list:SetPosition(195, 130)
+	self.form_list:SetPosition(195, 145)
 	self.form_list:SetScale(0.7, 0.7)
 	
 	self.augment_list = self.root:AddChild(self:ListSpells("augment"))
-	self.augment_list:SetPosition(195, 20)
+	self.augment_list:SetPosition(195, 35)
 	self.augment_list:SetScale(0.7, 0.7)
 	
 	self.glyphs_list = self.root:AddChild(self:ListSpells("glyphs"))
-	self.glyphs_list:SetPosition(-195, -15)
+	self.glyphs_list:SetPosition(-195, 0)
 	self.glyphs_list:SetScale(0.7, 0.7)
 	
 	self.all_form = {}
@@ -92,15 +92,15 @@ function WarneSpellBookWidget:Decorate()
 	self.decor = {}
 	
 	self.decor.bg = self.page:AddChild(Image(BOOK_ATLAS, "page_bg.tex"))
-	self.decor.bg:SetPosition(286, 20)
-	self.decor.bg:SetScale(0.95, 0.88)
+	self.decor.bg:SetPosition(300, 35)
+	self.decor.bg:SetScale(0.89, 0.88)
 
 	self.decor.bg1 = self.page:AddChild(Image(BOOK_ATLAS, "page_bg.tex"))
-	self.decor.bg1:SetPosition(-270, -32)
-	self.decor.bg1:SetScale(0.88, 1.9)
+	self.decor.bg1:SetPosition(-263, -17)
+	self.decor.bg1:SetScale(0.83, 1.72)
 	
 	self.result_button = self.page:AddChild(ImageButton(BOOK_ATLAS, "createspell_button.tex"))
-	self.result_button:SetPosition(130, -230)
+	self.result_button:SetPosition(150, -300)
 	self.result_button:SetText(STRINGS.UI.WARNE_SPELLS.CREATE_SPELL)
 	self.result_button:SetOnClick(function()
 		-- Add spell on book, rpc event as book needs to memorize it
@@ -112,21 +112,31 @@ function WarneSpellBookWidget:Decorate()
 	self.decor.left_line:SetPosition(30, 0)
 	
 	self.decor.devider1 = self.page:AddChild(Image(BOOK_ATLAS, "divider_1.tex"))
-	self.decor.devider1:SetPosition(280, 280)
+	self.decor.devider1:SetPosition(280, 295)
 	
-	self.decor.devider4 = self.page:AddChild(Image(BOOK_ATLAS, "divider_2.tex"))
-	self.decor.devider4:SetPosition(-250 - 20, 200)
+	self.decor.devider2 = self.page:AddChild(Image(BOOK_ATLAS, "divider_2.tex"))
+	self.decor.devider2:SetPosition(-250 - 20, 200)
+	self.decor.devider2:SetScale(.92, 1)
+
 	
 	self.decor.devider3 = self.page:AddChild(Image(BOOK_ATLAS, "divider_3.tex"))
-	self.decor.devider3:SetPosition(-250 - 20, 280)
+	self.decor.devider3:SetPosition(-250 - 20, 295)
+	self.decor.devider3:SetScale(.88, 1)
 	
 	self.decor.devider4 = self.page:AddChild(Image(BOOK_ATLAS, "divider_1.tex"))
-	self.decor.devider4:SetPosition(280, 125)
+	self.decor.devider4:SetPosition(280, 140)
 	self.decor.devider4:SetScale(1, -1)
 	
 	self.decor.devider5 = self.page:AddChild(Image(BOOK_ATLAS, "divider_2.tex"))
-	self.decor.devider5:SetPosition(-250 - 20, -270)
-	self.decor.devider5:SetScale(1, -1)
+	self.decor.devider5:SetPosition(-250 - 20, -230)
+	self.decor.devider5:SetScale(.92, -1)
+
+	self.decor.devider6 = self.page:AddChild(Image(BOOK_ATLAS, "divider_1.tex"))
+	self.decor.devider6:SetPosition(280, -70)
+
+	self.decor.devider7 = self.page:AddChild(Image(BOOK_ATLAS, "divider_1.tex"))
+	self.decor.devider7:SetPosition(-250 - 20, -315)
+	self.decor.devider7:SetScale(.83, 1)
 	
 	--
 	
@@ -137,26 +147,26 @@ function WarneSpellBookWidget:Decorate()
 	self.decor.hands_decal2:SetPosition(-270 - 180, -280)
 	self.decor.hands_decal2:SetScale(-1, 1)
 	
-	self.decor.skull_decal = self.page:AddChild(Image(BOOK_ATLAS, "skull_decal.tex"))
-	self.decor.skull_decal:SetPosition(-260, -318)
+	--self.decor.skull_decal = self.page:AddChild(Image(BOOK_ATLAS, "skull_decal.tex"))
+	--self.decor.skull_decal:SetPosition(-260, -318)
 	
 	self.decor.result_decal = self.page:AddChild(Image(BOOK_ATLAS, "spellresults_decal.tex"))
-	self.decor.result_decal:SetPosition(352, -230)
+	self.decor.result_decal:SetPosition(380, -215)
 	
 	--
 	
 	local num_spells = #self.all_form + #self.all_augment + #self.all_glyphs
 	self.decor.completion = self.page:AddChild(Text(HEADERFONT, font_size * 1.4, subfmt(STRINGS.UI.WARNE_SPELLS.COMPLETION, {num = self.num_spellz_discovered, max = num_spells}), UICOLOURS.GOLD))
-	self.decor.completion:SetPosition(-250 - 20, 310)
+	self.decor.completion:SetPosition(-250 - 20, 325)
 	
 	self.decor.text_form = self.page:AddChild(Text(HEADERFONT, font_size * 1.4, STRINGS.UI.WARNE_SPELLS.FORM, UICOLOURS.BLACK))
-	self.decor.text_form:SetPosition(280, 305)
+	self.decor.text_form:SetPosition(280, 325)
 	
 	self.decor.text_augment = self.page:AddChild(Text(HEADERFONT, font_size * 1.3, STRINGS.UI.WARNE_SPELLS.AUGMENT, UICOLOURS.BLACK))
-	self.decor.text_augment:SetPosition(280, 150)
+	self.decor.text_augment:SetPosition(280, 170)
 	
 	self.decor.text_glyphs = self.page:AddChild(Text(HEADERFONT, font_size * 1.5, STRINGS.UI.WARNE_SPELLS.GLYPHS, UICOLOURS.BLACK))
-	self.decor.text_glyphs:SetPosition(-250 - 20, 240)
+	self.decor.text_glyphs:SetPosition(-250 - 20, 255)
 end
 
 --
