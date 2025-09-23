@@ -8,14 +8,14 @@ local WARNE_SPELLS = {
 	speed = {type = "augment"},
 	split = {type = "augment"},
 	sticky = {type = "augment"},
-	harmless = {type = "augment"},
+	pierce = {type = "augment"},
 	trail = {type = "augment"},
 	curse = {type = "augment"},
 	
 	aoe = {type = "form"},
 	line = {type = "form"},
 	projectile = {type = "form"},
-	self = {type = "form"},
+	empower = {type = "form"},
 	
 	electric = {type = "glyph"},
 	fire = {type = "glyph"},
