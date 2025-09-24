@@ -22,8 +22,21 @@ icon_atlas = "modicon.xml"
 icon = "modicon.tex"
 
 server_filter_tags = {
-	"warne",
+	"warne", "character", "necromancer", "lich",
 }
+
+local function CreateLanguageOption(name, default, label, hover)
+    return {
+        name = name,
+        label = label,
+		hover = hover,
+		
+        options = {
+            {description = "English", hover = "By Feything", data = "en"},
+        },
+        default = default or "en",
+    }
+end
 
 local configs = {
 	
@@ -38,5 +51,5 @@ local options = {
 }
 
 configuration_options = {
-	
+	CreateLanguageOption("language", "en", "Language", "Change the mod language."),
 }

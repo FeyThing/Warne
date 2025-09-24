@@ -1,4 +1,3 @@
-require("warne_strings")
 require("warne_tuning")
 require("warne_util")
 
@@ -8,6 +7,7 @@ local inits = {
 	"init_prefabs",
 	"init_character",
 	"init_containers",
+	"init_languages",
 	"init_widgets",
 	"init_recipes",
 	"badges",
