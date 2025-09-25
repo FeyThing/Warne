@@ -43,7 +43,7 @@ function WarneSpellBookWidget:BuildSpellz()
 	self.num_spellz_discovered = 0
 	
 	self.form_list = self.root:AddChild(self:ListSpells("form"))
-	self.form_list:SetPosition(195, 145)
+	self.form_list:SetPosition(195, 142)
 	self.form_list:SetScale(0.7, 0.7)
 	
 	self.augment_list = self.root:AddChild(self:ListSpells("augment"))
@@ -230,7 +230,7 @@ function WarneSpellBookWidget:ListSpells(spell_type)
 		widget_height = 100,
 		force_peek = true,
 		num_visible_rows = spell_type == "form" and 2 or spell_type == "augment" and 2 or 4,
-		num_columns = 4,
+		num_columns = spell_type == "form" and 5 or 4,
 		item_ctor_fn = ScrollWidgetsCtor,
 		apply_fn = ScrollWidgetSetData,
 		scrollbar_offset = spell_type == "glyphs" and 8 or 28,
