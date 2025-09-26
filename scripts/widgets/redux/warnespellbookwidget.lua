@@ -2,6 +2,7 @@ local Image = require "widgets/image"
 local ImageButton = require "widgets/imagebutton"
 local TEMPLATES = require "widgets/redux/templates"
 local Text = require "widgets/text"
+local TextEdit = require "widgets/textedit"
 local Widget = require "widgets/widget"
 
 local WARNE_SPELLS = require("warne_spells")
@@ -35,6 +36,7 @@ local WarneSpellBookWidget = Class(Widget, function(self, owner, book_spells)
 	
 	self:BuildSpellz()
 	self:Decorate()
+	self:NameSpell()
 	
 	Warne_Spellbook = self
 end)
@@ -169,6 +171,21 @@ function WarneSpellBookWidget:Decorate()
 	self.decor.text_glyphs:SetPosition(-250 - 20, 255)
 end
 
+local STRING_MAX_LENGTH = 25
+
+function WarneSpellBookWidget:NameSpell()
+	self.namespell_bg = self.page:AddChild( Image("images/textboxes.xml", "textbox2_small_grey.tex") )
+    self.namespell_bg:SetPosition( -250 - 20, -285 )
+    self.namespell_bg:ScaleToSize( 160, 40 )
+
+	self.namespell = self.page:AddChild( TextEdit( BUTTONFONT, 30, "" ) )
+	self.namespell:SetPosition( -218 - 20, -288)
+	self.namespell:SetRegionSize( 230, 40 )
+	self.namespell:SetHAlign(ANCHOR_LEFT)
+	self.namespell:SetFocusedImage( self.namespell_bg, "images/textboxes.xml", "textbox2_grey.tex", "textbox2_gold.tex", "textbox2_gold_greyfill.tex" )
+	self.namespell:SetTextLengthLimit( STRING_MAX_LENGTH )
+    self.namespell:SetForceEdit(true)
+end
 --
 
 function WarneSpellBookWidget:HasSpell(name)
