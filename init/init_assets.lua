@@ -43,6 +43,9 @@ Assets = {
 	Asset("IMAGE", "images/warne_spellbook_glyphs.tex"),
 	Asset("ATLAS", "images/warne_spellbook_glyphs.xml"),
 
+	Asset("IMAGE", "images/warne_skilltree.tex"),
+	Asset("ATLAS", "images/warne_skilltree.xml"),
+
 	--sound
 	Asset("SOUNDPACKAGE", "sound/warne.fev"),
 	Asset("SOUND", "sound/warne.fsb"),
