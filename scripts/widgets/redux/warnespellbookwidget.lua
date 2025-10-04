@@ -45,15 +45,15 @@ function WarneSpellBookWidget:BuildSpellz()
 	self.num_spellz_discovered = 0
 	
 	self.form_list = self.root:AddChild(self:ListSpells("form"))
-	self.form_list:SetPosition(195, 142)
+	self.form_list:SetPosition(-195, 142)
 	self.form_list:SetScale(0.7, 0.7)
 	
 	self.augment_list = self.root:AddChild(self:ListSpells("augment"))
-	self.augment_list:SetPosition(195, 35)
+	self.augment_list:SetPosition(195, 95)
 	self.augment_list:SetScale(0.7, 0.7)
 	
 	self.glyphs_list = self.root:AddChild(self:ListSpells("glyphs"))
-	self.glyphs_list:SetPosition(-195, 0)
+	self.glyphs_list:SetPosition(-195, -40)
 	self.glyphs_list:SetScale(0.7, 0.7)
 	
 	self.all_form = {}
@@ -90,19 +90,48 @@ function WarneSpellBookWidget:BuildTabs()
 	end
 end
 
+--[[function WarneSpellBookWidget:UpdateNameString()
+    local recipe = self.data.recipe
+    local meta = self.data.meta
+
+    local namestr = STRINGS.NAMES[string.upper(recipe.nameoverride or recipe.name)] or STRINGS.NAMES[string.upper(recipe.product)]
+    if meta.limitedamount then
+        namestr = subfmt(STRINGS.UI.CRAFTING.LIMITEDAMOUNTFMT, {name = namestr, number = meta.limitedamount})
+    end
+
+    local title_width = self.panel_width / 2 - 30
+    self.namestring:SetMultilineTruncatedString(namestr, 1, title_width, nil, nil, true)
+end
+
+function WarneSpellBookWidget:Details()
+	-- Name
+    self.spellstring = self.page:AddChild(Text(UIFONT, name_font_size))
+    self.spellstring:SetPosition(0, y - name_font_size/2)
+    self:UpdateNameString()
+
+	-- Description
+	y = y - 5
+	local desc_font_size = 25
+	local spelldesc = self.page:AddChild(Text(BODYTEXTFONT, desc_font_size))
+	spelldesc:SetMultilineTruncatedString(STRINGS.UI.WARNE_SPELL_DESC[string.upper(recipe.description or recipe.product)], 2, width, nil, false, true)
+	spelldesc:SetPosition(0, y - desc_font_size)
+	y = y - desc_font_size * 2 -- 2 lines
+
+end]]
+
 function WarneSpellBookWidget:Decorate()
 	self.decor = {}
 	
 	self.decor.bg = self.page:AddChild(Image(BOOK_ATLAS, "page_bg.tex"))
-	self.decor.bg:SetPosition(300, 35)
+	self.decor.bg:SetPosition(300, 120)
 	self.decor.bg:SetScale(0.89, 0.88)
 
 	self.decor.bg1 = self.page:AddChild(Image(BOOK_ATLAS, "page_bg.tex"))
-	self.decor.bg1:SetPosition(-263, -17)
+	self.decor.bg1:SetPosition(-263, -75)
 	self.decor.bg1:SetScale(0.83, 1.72)
 	
 	self.result_button = self.page:AddChild(ImageButton(BOOK_ATLAS, "createspell_button.tex"))
-	self.result_button:SetPosition(150, -300)
+	self.result_button:SetPosition(125, -300)
 	self.result_button:SetText(STRINGS.UI.WARNE_SPELLS.CREATE_SPELL)
 	self.result_button:SetOnClick(function()
 		-- Add spell on book, rpc event as book needs to memorize it
@@ -114,30 +143,30 @@ function WarneSpellBookWidget:Decorate()
 	self.decor.left_line:SetPosition(30, 0)
 	
 	self.decor.devider1 = self.page:AddChild(Image(BOOK_ATLAS, "divider_1.tex"))
-	self.decor.devider1:SetPosition(280, 295)
+	self.decor.devider1:SetPosition(-250 - 20, 305)
 	
 	self.decor.devider2 = self.page:AddChild(Image(BOOK_ATLAS, "divider_2.tex"))
-	self.decor.devider2:SetPosition(-250 - 20, 200)
+	self.decor.devider2:SetPosition(-250 - 20, 140)
 	self.decor.devider2:SetScale(.92, 1)
 
 	
 	self.decor.devider3 = self.page:AddChild(Image(BOOK_ATLAS, "divider_3.tex"))
-	self.decor.devider3:SetPosition(-250 - 20, 295)
+	self.decor.devider3:SetPosition(280, 305)
 	self.decor.devider3:SetScale(.88, 1)
 	
 	self.decor.devider4 = self.page:AddChild(Image(BOOK_ATLAS, "divider_1.tex"))
-	self.decor.devider4:SetPosition(280, 140)
+	self.decor.devider4:SetPosition(280, 230)
 	self.decor.devider4:SetScale(1, -1)
 	
 	self.decor.devider5 = self.page:AddChild(Image(BOOK_ATLAS, "divider_2.tex"))
-	self.decor.devider5:SetPosition(-250 - 20, -230)
+	self.decor.devider5:SetPosition(-250 - 20, -285)
 	self.decor.devider5:SetScale(.92, -1)
 
 	self.decor.devider6 = self.page:AddChild(Image(BOOK_ATLAS, "divider_1.tex"))
-	self.decor.devider6:SetPosition(280, -70)
+	self.decor.devider6:SetPosition(280, 10)
 
 	self.decor.devider7 = self.page:AddChild(Image(BOOK_ATLAS, "divider_1.tex"))
-	self.decor.devider7:SetPosition(-250 - 20, -315)
+	self.decor.devider7:SetPosition(280, -335)
 	self.decor.devider7:SetScale(.83, 1)
 	
 	--
@@ -153,33 +182,33 @@ function WarneSpellBookWidget:Decorate()
 	--self.decor.skull_decal:SetPosition(-260, -318)
 	
 	self.decor.result_decal = self.page:AddChild(Image(BOOK_ATLAS, "spellresults_decal.tex"))
-	self.decor.result_decal:SetPosition(380, -215)
+	self.decor.result_decal:SetPosition(390, -150)
 	
 	--
 	
 	local num_spells = #self.all_form + #self.all_augment + #self.all_glyphs
 	self.decor.completion = self.page:AddChild(Text(HEADERFONT, font_size * 1.4, subfmt(STRINGS.UI.WARNE_SPELLS.COMPLETION, {num = self.num_spellz_discovered, max = num_spells}), UICOLOURS.GOLD))
-	self.decor.completion:SetPosition(-250 - 20, 325)
+	self.decor.completion:SetPosition(280, 325)
 	
 	self.decor.text_form = self.page:AddChild(Text(HEADERFONT, font_size * 1.4, STRINGS.UI.WARNE_SPELLS.FORM, UICOLOURS.BLACK))
-	self.decor.text_form:SetPosition(280, 325)
+	self.decor.text_form:SetPosition(-250 - 20, 325)
 	
 	self.decor.text_augment = self.page:AddChild(Text(HEADERFONT, font_size * 1.3, STRINGS.UI.WARNE_SPELLS.AUGMENT, UICOLOURS.BLACK))
-	self.decor.text_augment:SetPosition(280, 170)
+	self.decor.text_augment:SetPosition(280, 270)
 	
 	self.decor.text_glyphs = self.page:AddChild(Text(HEADERFONT, font_size * 1.5, STRINGS.UI.WARNE_SPELLS.GLYPHS, UICOLOURS.BLACK))
-	self.decor.text_glyphs:SetPosition(-250 - 20, 255)
+	self.decor.text_glyphs:SetPosition(-250 - 20, 175)
 end
 
 local STRING_MAX_LENGTH = 25
 
 function WarneSpellBookWidget:NameSpell()
 	self.namespell_bg = self.page:AddChild( Image("images/textboxes.xml", "textbox2_small_grey.tex") )
-    self.namespell_bg:SetPosition( -250 - 20, -285 )
+    self.namespell_bg:SetPosition( 380, -300 )
     self.namespell_bg:ScaleToSize( 160, 40 )
 
 	self.namespell = self.page:AddChild( TextEdit( BUTTONFONT, 30, "" ) )
-	self.namespell:SetPosition( -218 - 20, -288)
+	self.namespell:SetPosition( 410, -303)
 	self.namespell:SetRegionSize( 230, 40 )
 	self.namespell:SetHAlign(ANCHOR_LEFT)
 	self.namespell:SetFocusedImage( self.namespell_bg, "images/textboxes.xml", "textbox2_grey.tex", "textbox2_gold.tex", "textbox2_gold_greyfill.tex" )
