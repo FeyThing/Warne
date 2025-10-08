@@ -1933,30 +1933,30 @@ return {
 		CAVE_BANANA_BURNT = "Not my fault!",
 		BIRD_EGG = "A small, normal egg.",
 		BIRD_EGG_COOKED = "Sunny side yum!",
-		BISHOP = "Back off, preacherman!",
+		BISHOP = "Checkmate!",
 		BLOWDART_FIRE = "This seems fundamentally unsafe.",
-		BLOWDART_SLEEP = "Just don't breathe in.",
+		BLOWDART_SLEEP = "A tranquilizer dart, nice!",
 		BLOWDART_PIPE = "Good practice!",
 		BLOWDART_YELLOW = "It has shocking accuracy.",
-		BLUEAMULET = "Cool as ice!",
+		BLUEAMULET = "It emits arcane energy cold as ice.",
 		BLUEGEM = "It sparkles with cold energy.",
 		BLUEPRINT =
 		{
-            COMMON = "It's scientific!",
-            RARE = "It's REALLY scientific!",
+            COMMON = "Basic, schematics.",
+            RARE = "Schematics.",
         },
         SKETCH = "A picture of a sculpture. We'll need somewhere to make it.",
 		COOKINGRECIPECARD =
 		{
 			GENERIC = "Who wrote this? And I thought my handwriting was inconceiveable.",
 		},
-		BLUE_CAP = "It's weird and gooey.",
-		BLUE_CAP_COOKED = "It's different now...",
+		BLUE_CAP = "It's a blue fungus.",
+		BLUE_CAP_COOKED = "Cooked or not, still the same to me.",
 		BLUE_MUSHROOM =
 		{
 			GENERIC = "It's a mushroom.",
 			INGROUND = "It's sleeping.",
-			PICKED = "I wonder if it will come back?",
+			PICKED = "Looks like it's not entirely destroyed.",
 		},
 		BOARDS = "Boards.",
 		BONESHARD = "Useful.",
@@ -1978,11 +1978,11 @@ return {
 
 		CACTUS =
 		{
-			GENERIC = "Sharp but delicious.",
+			GENERIC = "You could stab someone with it.",
 			PICKED = "Deflated, but still spiny.",
 		},
-		CACTUS_MEAT_COOKED = "Grilled fruit of the desert.",
-		CACTUS_MEAT = "There are still some spines between me and a tasty meal.",
+		CACTUS_MEAT_COOKED = "It's still unappealing.",
+		CACTUS_MEAT = "It's very unappealing.",
 		CACTUS_FLOWER = "A pretty flower from a prickly plant.",
 
 		COLDFIRE =
@@ -2013,7 +2013,7 @@ return {
 		CATCOONHAT = "Ears hat!",
 		COONTAIL = "I think it's still swishing.",
 		CARROT = "It's not for me, but I'm sure some poor living sucker would prefer it.",
-		CARROT_COOKED = "Mushy.",
+		CARROT_COOKED = "It's just cooked this time.",
 		CARROT_PLANTED = "It's just a carrot rooted into the ground.",
 		CARROT_SEEDS = "It's a seed.",
 		CARTOGRAPHYDESK =
@@ -2106,12 +2106,12 @@ return {
 		CORN_SEEDS = "It's a seed.",
         CANARY =
 		{
-			GENERIC = "Some sort of yellow creature made of science.",
+			GENERIC = "It's a bird.",
 			HELD = "I'm not squishing you, am I?",
 		},
         CANARY_POISONED = "It's probably fine.",
 
-		CRITTERLAB = "Is there something in there?",
+		CRITTERLAB = "Something is scuttling inside.",
         CRITTER_GLOMLING = "What an aerodynamical creature!",
         CRITTER_DRAGONLING = "It's wyrmed its way into my heart.",
 		CRITTER_LAMB = "Much less mucusy than its momma.",
@@ -2122,11 +2122,11 @@ return {
 
 		CROW =
 		{
-			GENERIC = "Creepy!",
+			GENERIC = "It's a crow.",
 			HELD = "He's not very happy in there.",
 		},
-		CUTGRASS = "Cut grass, ready for arts and crafts.",
-		CUTREEDS = "Cut reeds, ready for crafting and hobbying.",
+		CUTGRASS = "Grass, it could be of use.",
+		CUTREEDS = "Great for spellcrafting.",
 		CUTSTONE = "Seductively smooth.",
 		DEADLYFEAST = "A most potent dish.", --unimplemented
 		DEER =
@@ -2134,8 +2134,8 @@ return {
 			GENERIC = "Is it staring at me? ...No, I guess not.",
 			ANTLER = "What an impressive antler!",
 		},
-        DEER_ANTLER = "Was that supposed to come off?",
-        DEER_GEMMED = "It's being controlled by that beast!",
+        DEER_ANTLER = "Ha! It dropped!",
+        DEER_GEMMED = "Arcane manipulation! Of course it is!",
 		DEERCLOPS = "Just great, another monster that wishes to murder me!!",
 		DEERCLOPS_EYEBALL = "Oooh, morbid.",
 		EYEBRELLAHAT =	"It watches over the wearer.",
@@ -2164,7 +2164,7 @@ return {
 			UNLOCKED = "Now the machine can work!", --singleplayer
 		},
 		DIVININGRODSTART = "That rod looks useful!", --singleplayer
-		DRAGONFLY = "That's one fly dragon!",
+		DRAGONFLY = "What kinda of abomination is that!",
 		ARMORDRAGONFLY = "Hot mail!",
 		DRAGON_SCALES = "They're still warm.",
 		DRAGONFLYCHEST =
@@ -2227,8 +2227,8 @@ return {
 		DURIAN_COOKED = "I'm going to chase someone with it!",
 		DURIAN_SEEDS = "It's a seed.",
 		EARMUFFSHAT = "Makes you warm and fuzzy inside. Outside, too.",
-		EGGPLANT = "It doesn't look like an egg.",
-		EGGPLANT_COOKED = "It's even less eggy.",
+		EGGPLANT = "It sure is a plant.",
+		EGGPLANT_COOKED = "It's cooked.",
 		EGGPLANT_SEEDS = "It's a seed.",
 
 		ENDTABLE =
@@ -2264,7 +2264,7 @@ return {
 			BURNING = "What a waste of wood.",
 			BURNT = "I feel like I could have prevented that.",
 			CHOPPED = "Take that, nature!",
-			GENERIC = "This sad tree has no cones.",
+			GENERIC = "An insufficient evergreen tree.",
 		},
 		TWIGGYTREE =
 		{
@@ -2299,7 +2299,7 @@ return {
 			GENERIC = "If only I could catch them!",
 			HELD = "They make my pocket glow!",
 		},
-		FIREHOUND = "That one is glowy.",
+		FIREHOUND = "When did they start burning?",
 		FIREPIT =
 		{
 			EMBERS = "I should put something on the fire before it goes out.",
@@ -2337,7 +2337,7 @@ return {
             GENERIC = "I like them, too bad they don't last long.",
             ROSE = "A rose, a bit of a change from the common varieties.",
         },
-        FLOWER_WITHERED = "I don't think it got enough sun.",
+        FLOWER_WITHERED = "Well, it doesn't look alive.",
 		FLOWERHAT = "I guess it's kinda pretty while it lasts.",
 		FLOWER_EVIL = "I don't get what the fuss is about. It's just a flower but slightly darker.",
 		FOLIAGE = "Just generic flora.",
